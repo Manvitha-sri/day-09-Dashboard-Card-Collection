@@ -1,0 +1,29 @@
+.gradient-card {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #111;
+  color: white;
+}
+
+.gradient-card::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 18px;
+  background: linear-gradient(
+    270deg,
+    #ff0080,
+    #7928ca,
+    #2afadf,
+    #ff0080
+  );
+  background-size: 600%;
+  animation: borderAnim 6s linear infinite;
+  z-index: -1;
+}
+
+@keyframes borderAnim {
+  0% { background-position: 0%; }
+  100% { background-position: 600%; }
+}

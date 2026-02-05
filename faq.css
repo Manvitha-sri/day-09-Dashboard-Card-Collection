@@ -1,0 +1,30 @@
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-item input {
+  display: none;
+}
+
+.faq-item label {
+  display: block;
+  background: #1f2933;
+  padding: 0.75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: #111;
+  padding: 0 0.75rem;
+  color: #ccc;
+}
+
+.faq-item input:checked ~ .faq-content {
+  max-height: 100px;
+  padding: 0.75rem;
+}
